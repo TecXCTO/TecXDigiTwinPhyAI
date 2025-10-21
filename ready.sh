@@ -13,3 +13,6 @@ pip install jupyterlab numpy opencv-python
 #apt-get update -y
 #apt-get install -y libnvinfer8 libnvinfer-dev libnvinfer-plugin8 libnvonnxparsers8 libnvparsers8
 #apt-get install -y tensorrt
+
+
+trtexec --onnx=model.onnx --saveEngine=model_fp16.engine --fp16
